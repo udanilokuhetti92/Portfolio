@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Udani Lokuhetti </title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Jersey+15&family=Kaushan+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="#" class="logo"><img src="Udani lokuhetti (1).png"></a></li>
+            <div id="navigation">
+                <li><a href="#home"> Home </a></li>
+                <li><a href="#about"> About </a></li>
+                <li><a href="#resume"> Resume </a></li>
+                <li><a href="#portfolio"> Portfolio </a></li>
+                <li><a href="#contact"> Contact </a></li>
+            </div>
+        </ul>
+    </nav>
+    <div id="home">
+        <section class="hero-section">
+            <h2>Hi, I'm <span class="highlight">Udani Lokuhetti</span></h2><br/>
+            <h3>
+              <span class="typing-text"></span>
+            </h3>
+        </section>
+    </div>
+    <div id="about">
+        <section id="about" class="about-section">
+            <div class="tabs">
+                <button class="tab-button active" onclick="showContent('education')">About Me</button>
+                <button class="tab-button" onclick="showContent('techSkills')">Technical Skills</button>
+                <button class="tab-button" onclick="showContent('softSkills')">Soft Skills</button>
+            </div>
+            <div id="education" class="tab-content active">
+                <p>I’m currently a second-year Software Engineering student at the Informatics Institute of Technology (IIT) in Sri Lanka,
+                     affiliated with the University of Westminster. Throughout my studies, I have developed a passion for technology, 
+                     especially in areas like web development and software engineering. I am actively learning various programming 
+                     languages, frameworks, and methodologies, with a focus on creating practical, real-world solutions</p>
+            </div>
+            <div id="techSkills" class="tab-content">
+                <i class="fa-brands fa-java"></i>
+                <i class="fa-brands fa-python"></i>
+                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-css3-alt"></i><br/>
+                <i class="fa-brands fa-js"></i>
+                <i class="fa-brands fa-react"></i>
+                <i class="fa-brands fa-figma"></i>
+            </div>
+            <div id="softSkills" class="tab-content">
+                <p>I believe that strong soft skills are essential for success in any career. I am an <div class="highlight">effective communicator</div>, 
+                    able to articulate ideas clearly and listen actively to others. My team-oriented approach helps me <div class="highlight">collaborate</div> 
+                    well with colleagues and contribute to group success. I am also <div div class="highlight">highly organized, managing my time effectively</div> 
+                    to meet deadlines and stay on top of multiple tasks. <div div class="highlight">Adaptability</div> is another key strength of mine, as I’m always 
+                    open to change and eager to take on new challenges.</p>
+            </div>
+        </section>
+    </div>
+    <div id="resume">
+        <a href="Udani_Lokuhetti_Resume.pdf" download="Udani_Lokuhetti_Resume.pdf" target="_blank">
+            <button class="download-btn">Download My Resume</button>
+        </a>
+    </div>
+    <div id="portfolio">
+        <section id="projects">
+            <div class="project-card">
+                <h3>Portfolio Website</h3>
+                <p><strong>Description:</strong> This is my personal portfolio website built to showcase my skills, projects, 
+                    and experience. The website is designed with a focus on clean aesthetics, responsive design, and user-friendly 
+                    navigation. It includes sections like 'About Me,' 'Skills,' 'Projects,' and 'Contact,' allowing visitors to easily 
+                    learn more about my background and capabilities.</p>
+                <p><strong>Technologies Used:</strong> <br/> <i class="fa-brands fa-html5"></i> <i class="fa-brands fa-css3-alt"></i> <i class="fa-brands fa-js"></i> </p>
+                <p><strong>Key Features:</strong> 
+                    <ul>
+                        <li>Responsive design to ensure the site looks good on any device (mobile, tablet, desktop).</li> 
+                        <li>Interactive elements like smooth scrolling and hover effects for a more engaging user experience.</li> 
+                        <li>Project showcase with descriptions, technologies used, and links to GitHub or live demos.</li> 
+                        <li>Contact details for direct communication with potential employers or collaborators.</li>
+                    </ul>
+                </p>
+                <p><strong>Outcome:</strong> This portfolio website serves as a digital resume that demonstrates my skills in front-end 
+                    development and design. It has helped me improve my web development skills and serves as a valuable tool for
+                    potential employers and clients to learn more about my capabilities and past work.</p>
+                <a href="#">View Project</a>
+            </div>
+        
+            <div class="project-card">
+                <h3>SeaSerenade Website - Shop Page</h3>
+                <p><strong>Description:</strong>  As part of the SeaSerenade website project, I contributed to developing the shop page 
+                    where users can browse and purchase sustainable ocean-themed products. The page features product listings, 
+                    a shopping cart, and a checkout system. I worked collaboratively with the team to ensure the design was both 
+                    functional and user-friendly, allowing for an easy shopping experience.</p>
+                <p><strong>Technologies Used:</strong> <br/> <i class="fa-brands fa-html5"></i> <i class="fa-brands fa-css3-alt"></i> <i class="fa-brands fa-js"></i> </p>
+                <p><strong>Key Features:</strong>
+                    <ul>
+                        <li>Product listings with images, descriptions, and prices.</li> 
+                        <li>Shopping cart that updates dynamically as items are added or removed.</li> 
+                        <li>Checkout form with a payment summary and customer details input.</li> 
+                        <li>Responsive design ensuring compatibility across mobile, tablet, and desktop devices.</li>
+                    </ul>
+                </p>
+                <p><strong>Outcome:</strong> The shop page serves as a key component of the SeaSerenade website, enabling users to 
+                    browse and purchase products to support ocean conservation. The page is fully functional with a clean and responsive 
+                    design, improving the overall user experience. The project successfully met its goal of providing an intuitive 
+                    shopping experience while promoting sustainability.</p>
+                <a href="https://github.com/udanilokuhetti92/SeaSerenade" target="_blank">Github Repository</a>
+            </div>
+        </section>
+    </div>
+    <div id="contact">
+        <div class="contact-buttons">
+            <a href="mailto:udanikasurika@gmail.com" class="contact-button email">Email</a>
+            <a href="https://github.com/udanilokuhetti92" target="_blank" class="contact-button github">GitHub</a>
+            <a href="https://www.linkedin.com/in/udani-lokuhetti-4210822ab" target="_blank" class="contact-button linkedin">LinkedIn</a>
+        </div>        
+    </div>
+    <footer>
+        <p><a href="#">&copy; Udani Lokuhetti</a></p>
+    </footer>
+    
+</body>
+</html>
