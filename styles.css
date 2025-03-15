@@ -1,0 +1,557 @@
+/* General Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #FFFFFF;
+    background-color: #00171F;
+  }
+  
+  h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Centering the Button */
+.button-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+/* Button Styling */
+.btn {
+  display: inline-block;
+  padding: 12px 10px;
+  background-color: #00A8E8;
+  color: black;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 20px;
+  border: 2px dashed navy;
+  transition: 0.3s;
+}
+
+  
+  .btn:hover {
+    background-color: #007EA7;
+    transform: translateY(-3px);
+  }
+  
+  /* Navigation Bar */
+  /* Navigation Bar */
+#navbar {
+  background-color: #00171F;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+#navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+#navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #00A8E8;
+  text-decoration: none;
+}
+
+/* Navbar List */
+#navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+#navbar ul li a {
+  text-decoration: none;
+  color: #FFFFFF;
+  transition: color 0.3s;
+}
+
+#navbar ul li a:hover {
+  color: #00A8E8;
+}
+
+/* Hamburger Menu (hidden by default) */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.menu-toggle .bar {
+  width: 25px;
+  height: 3px;
+  background-color: #FFFFFF;
+}
+
+/* Responsive Styles for the Navbar */
+@media (max-width: 768px) {
+  #navbar .container {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  #navbar ul {
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  #navbar ul li a {
+    font-size: 1.2rem;
+    padding: 10px;
+  }
+
+  /* Show the hamburger icon */
+  .menu-toggle {
+    display: flex;
+  }
+
+  /* Active state for the navigation */
+  #navbar ul.active {
+    display: flex;
+  }
+}
+  
+  /* Hero Section */
+  .hero {
+    display: flex;
+    align-items: center;
+    padding: 100px 0;
+    background-color: #00171F;
+  }
+  
+  .hero-text {
+    animation: fadeIn 1.5s ease-in-out;
+    flex:1;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .hero-text h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  
+  .hero-text span {
+    color: #00A8E8;
+  }
+  
+  .hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero-image {
+    flex: 1;
+    text-align: right;
+    margin-top: -300px;
+  }
+  
+  .hero-image img {
+    width: 300px;
+    border-radius: 50%;
+    border:5px #00A8E8;
+    border-style:inset;
+  }
+  
+  /* About Me */
+  .about {
+    padding: 80px 0;
+    background-color: #003459;
+  }
+  
+  .about h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .about p {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 20px;
+  }
+  
+/* Skills Section */
+.skills {
+  padding: 80px 0;
+  background-color: #00171F; /* Background color */
+}
+
+/* Flexbox Layout for Categories */
+.skills {
+  display: flex;
+  justify-content: space-evenly; /* Distribute categories evenly */
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+.category {
+  flex: 1 1 250px; /* Allow categories to grow and shrink, with a minimum width */
+  margin: 5px;
+  padding: 20px;
+  background-color: #212121;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border:3px solid #00A8E8;
+}
+
+.category-title {
+  font-weight: bold;
+  color: #00A8E8;
+  cursor: pointer;
+  padding: 10px;
+  background-color: #212121;
+  border-radius: 8px;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+  width: 90%;
+  text-align: center;
+}
+
+.category-title:hover {
+  background-color: #00719c;
+  color:black;
+}
+
+/* Skills List */
+.skills-list {
+  display: none;
+  margin-top: 5px;
+  padding-left: 20px;
+  text-align: center;
+}
+
+.category:hover .skills-list {
+  display: block; /* Show skills under category when hovered */
+}
+
+.skills-list p {
+  color: #fff;
+  margin: 5px 0;
+}
+
+/* Optional: Add a small transition effect for skills list */
+.skills-list p {
+  transition: opacity 0.5s ease-in-out;
+}
+
+.category:hover .skills-list p {
+  opacity: 1;
+}
+
+  /* Projects */
+  .projects {
+    padding: 80px 0;
+    background-color: #003459;
+  }
+  
+  .projects h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .projects p{
+    text-align: justify;
+  }
+  
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .project-card img {
+    width: 100%; 
+    max-width: 300px; 
+    height: auto; 
+    display: block; 
+    margin: 10px auto; 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  }
+  
+  
+  .project-card {
+    background-color: #00171F;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Contact */
+  .contact {
+    padding: 80px 0;
+    background-color: #00171F;
+    display: flex;
+    justify-content: center;  /* Center horizontally */
+    align-items: center;  /* Center vertically */
+    height: 30vh;  /* Full viewport height */
+    margin-bottom: 80px;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .form-container {
+    width: 450px;
+    background: linear-gradient(#212121, #212121) padding-box,
+                linear-gradient(145deg, transparent 35%,#4f54c0, #40c9ff) border-box;
+    border: 2px solid transparent;
+    padding: 10px 50px;
+    font-size: 14px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-sizing: border-box;
+    border-radius: 16px;
+  }
+  
+  .form-container button:active {
+    scale: 0.95;
+  }
+  
+  .form-container .form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .form-container .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  
+  .form-container .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: white;
+    font-weight: 600;
+    font-size: 12px;
+  }
+  
+  .form-container .form-group input {
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 8px;
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #daddde;
+  }
+  
+  .form-container .form-group textarea {
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 8px;
+    resize: none;
+    color: #fff;
+    height: 100px;
+    border: 1px solid #daddde;
+    background-color: transparent;
+    font-family: inherit;
+  }
+  
+  .form-container .form-group input::placeholder {
+    opacity: 0.5;
+  }
+  
+  .form-container .form-group input:focus {
+    outline: none;
+    border-color: #4f54c0;
+  }
+  
+  .form-container .form-group textarea:focus {
+    outline: none;
+    border-color: #4f54c0;
+  }
+  
+  .form-container .form-submit-btn {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    align-self: flex-start;
+    font-family: inherit;
+    padding: 12px 10px;
+    background-color: #00A8E8;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 12px;
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+  
+  .form-container .form-submit-btn:hover {
+    background-color: #007EA7;
+    transform: translateY(-10px);
+  }
+
+  /* From Uiverse.io by aadium */ 
+.social-buttons {
+  display: flex;
+  justify-content: left;
+  align-items:left;
+  background-color: transparent;
+  box-shadow: 0px 0px 15px #00000027;
+  padding: 15px 10px;
+  border-radius: 5em;
+  margin-left: -20px;
+  margin-bottom: 20px;
+}
+
+.social-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 0 10px;
+  background-color: #fff;
+  box-shadow: 0px 0px 4px #00000027;
+  transition: 0.3s;
+}
+
+.social-button:hover {
+  background-color: #f2f2f2;
+  box-shadow: 0px 0px 6px 3px #00000027;
+}
+
+.social-buttons svg {
+  transition: 0.3s;
+  height: 20px;
+}
+
+.facebook {
+  background-color: #3b5998;
+}
+
+.facebook svg {
+  fill: #f2f2f2;
+}
+
+.facebook:hover svg {
+  fill: #3b5998;
+}
+
+.github {
+  background-color: #333;
+}
+
+.github svg {
+  width: 25px;
+  height: 25px;
+  fill: #f2f2f2;
+}
+
+.github:hover svg {
+  fill: #333;
+}
+
+.linkedin {
+  background-color: #0077b5;
+}
+
+.linkedin svg {
+  fill: #f2f2f2;
+}
+
+.linkedin:hover svg {
+  fill: #0077b5;
+}
+
+.instagram {
+  background-color: #c13584;
+}
+
+.instagram svg {
+  fill: #f2f2f2;
+}
+
+.instagram:hover svg {
+  fill: #c13584;
+}
+
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #003459;
+    color: white;
+  }
+
+  @media (max-width:768px) {
+    /* Navigation Bar */
+  #navbar .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #navbar ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* Hero Section */
+  .hero {
+    flex-direction: column;
+    padding: 60px 20px;
+    text-align: center;
+  }
+
+  .hero-text {
+    flex: 1;
+    text-align: center;
+  }
+
+  .hero-image {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+  .hero-image img {
+    width: 200px;
+    margin-top: 20px;
+  }
+
+  /* About Me */
+  .about {
+    padding: 60px 20px;
+  }
+  }
