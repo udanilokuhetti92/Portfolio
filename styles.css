@@ -565,7 +565,6 @@ body {
 }
 
 .project-content p {
-  
   color: var(--text-secondary);
   margin-bottom: 1.5rem;
   font-size: 0.95rem;
@@ -712,6 +711,95 @@ body {
 /* Bounce Effect */
 .logo {
   animation: bounce 1.5s infinite alternate ease-in-out;
+}
+
+/* Certifications Section */
+.certifications {
+  padding: 60px 0;
+}
+
+.certifications .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  border: var(--accent-secondary);
+}
+
+.certifications .section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.certifications-content {
+  display: flex;
+  flex-wrap: wrap;
+  color: var(--text-secondary);
+  justify-content: center;
+  gap: 30px;
+}
+
+.certification-item {
+  background: var(--bg-primary);
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 320px;
+}
+
+.certification-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+  border: 2px solid var(--accent-secondary);
+}
+
+.certification-item h3 {
+  font-size: 1.3rem;
+  color: var(--text-primary);
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.certification-image {
+  width: 200px; 
+  height: auto;
+  margin:20px;
+  border-radius: 6px;
+}
+
+.certification-item p {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  margin-bottom: 10px;
+}
+
+.certification-item .certification-date {
+  font-size: 0.9rem;
+  color: #777;
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+.certification-item .btn {
+  display: inline-block;
+  background-color: var(--accent-secondary);
+  color: #ffffff;
+  padding: 10px 25px;
+  font-size: 1rem;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.certification-item .btn:hover {
+  background-color: #00719c;
+  transform: scale(1.05);
 }
 
 /* Keyframes */
