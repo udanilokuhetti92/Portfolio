@@ -366,6 +366,7 @@ body {
 
 .about-text {
   color: var(--text-secondary);
+  text-align: justify;
 }
 
 .about-highlights {
@@ -401,8 +402,8 @@ body {
 
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
 }
 
 .skill-category {
@@ -443,10 +444,16 @@ body {
 
 .skill-item {
   position: relative;
-  height: 30px;
+  height: 40px;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 15px;
   overflow: hidden;
+}
+
+.skill-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(162, 163, 213, 0.8);
+  border-color: var(--accent-primary);
 }
 
 .skill-item::before {
